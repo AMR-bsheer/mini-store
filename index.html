@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laklouk and Zabout</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+
+        h1 {
+            color: #eaa9b2;
+        }
+
+        img {
+            margin-left: 15px;
+        }
+
+        a i {
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="images/laklok.jpg" alt="Logo" class="h-10">
+                <h1 class=" text-lg font-bold ">Laklouk and Zabout</h1>
+            </div>
+            <!-- Navigation Links -->
+            <nav class="flex space-x-4 hidden md:flex">
+                <a href="#home"
+                    class="text-gray-800 font-bold text-lg py-2 px-4 rounded-md hover:bg-[#eaa9b2] hover:text-white transition-colors">
+                    الصفحة الرئيسية
+                </a>
+                <a href="#products"
+                    class="text-gray-800 font-bold text-lg py-2 px-4 rounded-md hover:bg-[#eaa9b2] hover:text-white transition-colors">
+                    منتجاتنا
+                </a>
+                <a href="#contact"
+                    class="text-gray-800 font-bold text-lg py-2 px-4 rounded-md hover:bg-[#eaa9b2] hover:text-white transition-colors">
+                    تواصلوا معنا
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button class="text-gray-800 font-bold" onclick="toggleMenu()">☰</button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden flex flex-col space-y-2 bg-white px-4 py-2">
+            <a href="#home"
+                class="text-gray-800 font-bold text-lg py-2 px-4 rounded-md hover:bg-[#eaa9b2] hover:text-white transition-colors">
+                الصفحة الرئيسية
+            </a>
+            <a href="#products"
+                class="text-gray-800 font-bold text-lg py-2 px-4 rounded-md hover:bg-[#eaa9b2] hover:text-white transition-colors">
+                منتجاتنا
+            </a>
+            <a href="#contact"
+                class="text-gray-800 font-bold text-lg py-2 px-4 rounded-md hover:bg-[#eaa9b2] hover:text-white transition-colors">
+                تواصلوا معنا
+            </a>
+        </div>
+    </header>
+    
+    <!-- Main Section -->
+    <div id="home" class="flex flex-col md:flex-row items-center justify-between min-h-screen px-8 bg-white">
+        <!-- Logo Section -->
+        <div class="md:w-1/2 flex justify-center mb-8 md:mb-0">
+            <img src="images/laklok.jpg" alt="Logo" class="w-80 h-auto"> 
+        </div>
+
+        <!-- Text Section -->
+        <div class="md:w-1/2 text-center md:text-right">
+            <h1 class="text-6xl font-bold text-gray-800 mb-6">مرحباً بكم</h1> 
+            <p class="text-4xl text-[#eaa9b2] font-medium">صنعت بكل حب</p> 
+        </div>
+    </div>
+    <hr>
+    <!-- Products Section -->
+    <section id="products" class="py-12 bg-white">
+        <!-- Section Title -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-800">منتجاتنا</h2>
+            <p class="text-lg text-gray-600 mt-2">تصفح أحدث منتجاتنا</p>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+            <!-- Product Card 1 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="images/product1.jpg" alt="Product 1" class="w-full h-80 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">طارة Handmade</h3>
+                    <p class="text-gray-600 mb-4">شغل التطريز بتاعنا متاح تنفيذ اي شكل</p>
+                    <a href="https://wa.me/01029032965" target="_blank"
+                        class="block text-center bg-[#eaa9b2] text-white font-bold py-2 px-4 rounded hover:bg-[#d88c9b] transition">
+                        اشتري الآن
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="images/product2.jpg" alt="Product 2" class="w-full h-80 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">شنطة كروس سواريه بخيط القطيفة</h3>
+                    <p class="text-gray-600 mb-4">شيك جدا في اللبس ,بس محتاجه استخدامم خفيف ,متاح تنفيذ نفس اللون او الوان اخري, وممكن تحددي المقاس.</p>
+                    <a href="https://wa.me/01029032965" target="_blank"
+                        class="block text-center bg-[#eaa9b2] text-white font-bold py-2 px-4 rounded hover:bg-[#d88c9b] transition">
+                        اشتري الآن
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="images/product3.jpg" alt="Product 3" class="w-full h-80 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">منظم اكسسورات و ميكب</h3>
+                    <p class="text-gray-600 mb-4">شيك جدا للتسريحة بيحلي اي مكان يتحط فيه, متاح تغيير الالوان حسب الرغبة , متاح شراء الطقم كامل ,متاح شراء بالقطعة.</p>
+                    <a href="https://wa.me/01029032965" target="_blank"
+                        class="block text-center bg-[#eaa9b2] text-white font-bold py-2 px-4 rounded hover:bg-[#d88c9b] transition">
+                        اشتري الآن
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="images/product4.jpg" alt="Product 4" class="w-full h-80 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">هلال رمضان</h3>
+                    <p class="text-gray-600 mb-4">متاح تنفيذ اي شكل و اي لون .</p>
+                    <a href="https://wa.me/01029032965" target="_blank"
+                        class="block text-center bg-[#eaa9b2] text-white font-bold py-2 px-4 rounded hover:bg-[#d88c9b] transition">
+                        اشتري الآن
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="images/product5.jpg" alt="Product 5" class="w-full h-80 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">فستان بيبي عمر شهور</h3>
+                    <p class="text-gray-600 mb-4">شكله تحفه علي الطبيعي و بخيط تركي مش بيوبر معاه الزعبوط و اللكلوك.</p>
+                    <a href="https://wa.me/01029032965" target="_blank"
+                        class="block text-center bg-[#eaa9b2] text-white font-bold py-2 px-4 rounded hover:bg-[#d88c9b] transition">
+                        اشتري الآن
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="images/product6.jpg" alt="Product 6" class="w-full h-80 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">مراية مكرمية</h3>
+                    <p class="text-gray-600 mb-4">ديكور يحلي اي مكان تتحط فيه , متاح تنفيذ اشكال و الوان مختلفة حسب الطلب</p>
+                    <a href="https://wa.me/01029032965" target="_blank"
+                        class="block text-center bg-[#eaa9b2] text-white font-bold py-2 px-4 rounded hover:bg-[#d88c9b] transition">
+                        اشتري الآن
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+
+            <!-- Left Side: Contact and Social Media -->
+            <div class="flex flex-col items-start space-y-4">
+                <div class="flex items-center space-x-4">
+                    <p class="text-lg font-bold">تواصل معنا :</p>
+                    <a href="https://wa.me/01029032965" target="_blank" class="text-2xl text-[#eaa9b2] hover:text-white">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <p class="text-lg">تابعونا على <a href="https://www.facebook.com/profile.php?id=100063832784390&mibextid=ZbWKwL" target="_blank" class="text-[#eaa9b2] hover:text-white">فيسبوك</a></p>
+            </div>
+
+            <!-- Right Side: Address and Contact -->
+            <div class="mt-8 md:mt-0 text-center md:text-right">
+                <i class="fas fa-map-marker-alt text-3xl text-[#eaa9b2]"></i>
+                <p class="text-lg">العنوان: المنصورة , الدقهلية</p>
+                <p class="text-lg">البريد الإلكتروني: alaaelngar3009@Gmail.com </p>
+                <p class="text-lg">رقم الهاتف:  01029032965</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>
